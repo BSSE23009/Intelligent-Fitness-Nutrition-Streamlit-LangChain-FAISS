@@ -1,4 +1,4 @@
-# 💪 Fitness, Nutrition & Motivation AI
+# 💪 Fitness and Nutrition AI Assistant
 
 This project is a Streamlit web app powered by LangChain agents and RAG (Retrieval-Augmented Generation). It can answer questions about workouts, meals, motivation, and the *Starting Strength* book. Users provide their own API keys using a `.env` file.
 
