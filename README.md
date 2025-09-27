@@ -46,7 +46,7 @@ docker build -t fitness_app .
 ### Step 4: Run Docker container
 
 ```bash
-docker run --env-file .env -p 8501:8501 fitness_app
+docker run --rm -it -p 8501:8501 fitness_app sh /start_streamlit.sh
 ```
 
 Open your browser and go to [http://localhost:8501](http://localhost:8501) to access the app.
