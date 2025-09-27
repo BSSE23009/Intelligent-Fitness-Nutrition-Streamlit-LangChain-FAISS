@@ -9,7 +9,7 @@ This project is a Streamlit web app powered by LangChain agents and RAG (Retriev
 1. Personalized workout recommendations
 2. Nutrition and meal guidance
 3. Instant motivational messages
-4. RAG-based answers from the *Starting Strength* book
+4. RAG-based answers from a famous fitness book
 5. Chat interface with AI agents
 
 ---
