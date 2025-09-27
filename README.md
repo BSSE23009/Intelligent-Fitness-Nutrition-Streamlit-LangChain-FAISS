@@ -18,6 +18,8 @@ This project is a Streamlit web app powered by LangChain agents and RAG (Retriev
 
 1. Docker
 2. `.env` file with your own API keys (OpenAI, Pinecone if using)
+3. A local copy of the *Starting Strength* book (PDF)
+
 
 ---
 
@@ -46,7 +48,9 @@ docker build -t fitness_app .
 ### Step 4: Run Docker container
 
 ```bash
-docker run --rm -it -p 8501:8501 fitness_app sh /start_streamlit.sh
+docker run --env-file .env -p 8501:8501 \
+-v "/path/to/Starting Strength PDF.pdf:/app/Starting Strength PDF.pdf" \
+-it fitness_app_clean sh /app/start.sh
 ```
 
 Open your browser and go to [http://localhost:8501](http://localhost:8501) to access the app.
